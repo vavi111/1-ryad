@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Рекомендации — Первый ряд</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="recommendations">
+    <header class="header">
+        <div class="container">
+
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Первый ряд" class="logo">
+            </a>
+
+            <nav class="nav" id="site-nav" aria-label="Основная навигация">
+                <a href="index.html#about">О театре</a>
+                <a href="index.html#history">История</a>
+                <a href="index.html#types">Виды</a>
+                <a href="recommendations.html">Советы</a>
+            </nav>
+
+            <button class="search" type="button" aria-label="Поиск">
+                <span class="search-icon"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="rec-hero">
+            <div class="rec-container">
+                <h1>Рекомендации</h1>
+                <p>У каждого свой театр. Одни приходят за яркими эмоциями, другие — за лёгкостью и смехом, третьи ищут истории, которые заставляют задуматься.<br>Мы собрали спектакли для разных характеров, настроений и поводов.</p>
+                <span class="rec-button">пройти тест</span>
+            </div>
+        </section>
+
+        <section class="rec-container rec-mood" id="mood">
+            <h2>Какое у вас настроение?</h2>
+            <p>Выберите настроение, и мы подскажем, какой спектакль вам подойдёт</p>
+            <div class="rec-mood-buttons" role="group" aria-label="Настроение">
+                <label>
+                    <input class="rec-mood-input" type="radio" name="mood" id="mood-romance" checked>
+                    <span>Романтическое</span>
+                </label>
+                <label>
+                    <input class="rec-mood-input" type="radio" name="mood" id="mood-humor">
+                    <span>Юмор</span>
+                </label>
+                <label>
+                    <input class="rec-mood-input" type="radio" name="mood" id="mood-thoughtful">
+                    <span>Задумчивое</span>
+                </label>
+            </div>
+            <div class="rec-mood-panel" id="panel-romance">
+                <p class="rec-mood-description">Для тех, кто верит в любовь, красивые истории и сильные чувства.</p>
+                <div class="rec-cards">
+                    <article class="rec-card">
+                        <header><h3>Ромео и Джульетта</h3><span class="rec-author">Уильям Шекспир</span></header>
+                        <div class="rec-card-body">
+                            <p>История двух влюблённых, которым приходится бороться за своё чувство вопреки всему миру. Страсть, нежность и трагедия, которая не оставляет равнодушным.</p>
+                            <img src="images/1.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> любовь, переживания, романтика.</p>
+                    </article>
+                    <article class="rec-card">
+                        <header><h3>Сирано де Бержерак</h3><span class="rec-author">Эдмон Ростан</span></header>
+                        <div class="rec-card-body">
+                            <p>История человека, который умеет красиво говорить о любви, но боится признаться в собственных чувствах. Остроумие, поэзия и трогательная история о внутренней красоте.</p>
+                            <img src="images/2.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> нежность, вдохновение, лёгкая грусть.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="rec-mood-panel" id="panel-humor">
+                <p class="rec-mood-description">Для тех, кто хочет от души посмеяться и провести лёгкий вечер.</p>
+                <div class="rec-cards">
+                    <article class="rec-card">
+                        <header><h3>Ревизор</h3><span class="rec-author">Николай Гоголь</span></header>
+                        <div class="rec-card-body">
+                            <p>Городские чиновники принимают случайного гостя за важного проверяющего. Попытки скрыть беспорядок только добавляют путаницы.</p>
+                            <img src="images/3.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> сатира, суета, веселье.</p>
+                    </article>
+                    <article class="rec-card">
+                        <header><h3>Слуга двух господ</h3><span class="rec-author">Карло Гольдони</span></header>
+                        <div class="rec-card-body">
+                            <p>Находчивый Труффальдино нанимается сразу к двум хозяевам и делает всё, чтобы они об этом не узнали.</p>
+                            <img src="images/4.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> лёгкость, азарт, смех.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="rec-mood-panel" id="panel-thoughtful">
+                <p class="rec-mood-description">Для тех, кому хочется подумать о выборе, переменах и времени.</p>
+                <div class="rec-cards">
+                    <article class="rec-card">
+                        <header><h3>Вишнёвый сад</h3><span class="rec-author">Антон Чехов</span></header>
+                        <div class="rec-card-body">
+                            <p>Семья рискует потерять родовое имение. Пока одни держатся за воспоминания, другие уже строят планы на будущее.</p>
+                            <img src="images/5.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> ностальгия, перемены, размышления.</p>
+                    </article>
+                    <article class="rec-card">
+                        <header><h3>Гамлет</h3><span class="rec-author">Уильям Шекспир</span></header>
+                        <div class="rec-card-body">
+                            <p>Датский принц пытается разобраться в смерти отца и решить, как поступить с правдой, которая меняет его жизнь.</p>
+                            <img src="images/6.png" alt="">
+                        </div>
+                        <p class="rec-card-mood"><strong>Настроение:</strong> сомнение, напряжение, размышления.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="rec-container rec-cta">
+            <h2>Не знаете, что<br> выбрать?</h2>
+            <p>Расскажите нам о своём настроении, а мы поможем найти спектакль, который сделает ваш вечер особенным.</p>
+            <span class="rec-button">пройти тест</span>
+        </section>
+    </main>
+
+    <footer class="rec-footer">
+        <div class="rec-container">
+            <a href="index.html" class="rec-footer-logo"><img src="images/logo.svg" alt="Первый ряд"></a>
+            <nav class="rec-nav" aria-label="Навигация в подвале">
+                <a href="index.html#about">О театре</a>
+                <a href="index.html#history">История</a>
+                <a href="index.html#types">Виды</a>
+                <a href="recommendations.html" aria-current="page">Советы</a>
+            </nav>
+            <div class="rec-socials">
+                <a href="https://telegram.org/"><img src="images/telegram.svg" alt="Telegram"></a>
+                <a href="https://vk.com/"><img src="images/vk.svg" alt="ВКонтакте"></a>
+                <a href="https://youtube.com/"><img src="images/youtube.svg" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
